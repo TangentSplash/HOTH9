@@ -10,15 +10,20 @@ function Answer(props) {
   {
       if (props.correct)
       {
+        //.setState({text})="Correct"
+        setAnsweredState
         console.log("Correct");
         return(
           <h1>Correct</h1>
             )
       }
       else
+      {
+      console.log("Incorrect");
       return(
           <div>Incorrect</div>
         )
+      }
       
   }
 

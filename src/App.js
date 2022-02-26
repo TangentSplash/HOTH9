@@ -1,6 +1,7 @@
 import './App.css';
 import Question from './Question.js';
 
+var text="Hello";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <h1>Anti-War</h1>
       <header className="App-header">
         <Question questNo='1' />
+        <Question questNo='2'/>
+        <p>{text}</p>
       </header>
     </div>
   );
