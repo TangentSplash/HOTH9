@@ -1,16 +1,21 @@
 import './App.css';
 import Question from './Question.js';
-
-var text="Hello";
+import Leaderboard from './Leaderboard.js';
 
 function App() {
   return (
     <div className="App">
       <h1>Anti-War</h1>
-      <header className="App-header">
+        <label>
+            Username: 
+            <input type="text" name="name" />
+        </label>
+      <header className="Quiz">
         <Question questNo='1' />
         <Question questNo='2'/>
-        <p>{text}</p>
+      </header>
+      <header className="Leaderboard">
+        <Leaderboard/>
       </header>
     </div>
   );

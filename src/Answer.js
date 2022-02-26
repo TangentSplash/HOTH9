@@ -1,7 +1,7 @@
 function Answer(props) {
     return(
         <div>
-            <button onClick={<Selected correct={props.correct} />}>{props.answer}</button>
+            <button onClick={<Selected correct={props.correct}/>}>{props.answer}</button>
         </div>
     );
   }
@@ -11,7 +11,8 @@ function Answer(props) {
       if (props.correct)
       {
         //.setState({text})="Correct"
-        setAnsweredState
+        document.getElementById("Answer").innerHTML="Correct";
+        document.getElementById("Answer").forceUpdate();
         console.log("Correct");
         return(
           <h1>Correct</h1>
