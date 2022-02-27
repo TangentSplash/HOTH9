@@ -1,31 +1,25 @@
-function Answer(props) {
+function Answer(props){
     return(
-        <div>
-            <button onClick={<Selected correct={props.correct}/>}>{props.answer}</button>
+        <div>   
+            <button type="submit" onClick={() => Selected(props.correct, props.answered)}>Answer</button>
         </div>
     );
-  }
+}
 
-  function Selected(props)
-  {
-      if (props.correct)
-      {
-        //.setState({text})="Correct"
-        document.getElementById("Answer").innerHTML="Correct";
-        document.getElementById("Answer").forceUpdate();
-        console.log("Correct");
-        return(
-          <h1>Correct</h1>
-            )
-      }
-      else
-      {
-      console.log("Incorrect");
-      return(
-          <div>Incorrect</div>
-        )
-      }
-      
-  }
+function Selected(correct, answered)
+{
+    if (correct)
+    {
+        //alert("Correct")
+        answered("Correct")
+    }
+    else
+    {
+        //alert("Incorrect")
+        answered("Incorrect")
+    }
+    //props.answered(props.correct)
+    
+}
 
-  export default Answer;
+export default Answer
