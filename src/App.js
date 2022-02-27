@@ -1,8 +1,13 @@
 import './App.css';
 import Question from './Question.js';
+<<<<<<< HEAD
 import Leaderboard from './Leaderboard.js';
 import Questions from './QandA.json';
 
+=======
+
+var text="Hello";
+>>>>>>> parent of 595a03f (v0.02)
 
 function App() {
   //alert(Questions.NoQs)
@@ -10,6 +15,7 @@ function App() {
     
     
     <div className="App">
+<<<<<<< HEAD
       <h1>Anti-war Knowledge Contest</h1>
         <label>
             Username: 
@@ -27,6 +33,13 @@ function App() {
       </header>
       <header className="Leaderboard">
         <Leaderboard/>
+=======
+      <h1>Anti-War</h1>
+      <header className="App-header">
+        <Question questNo='1' />
+        <Question questNo='2'/>
+        <p>{text}</p>
+>>>>>>> parent of 595a03f (v0.02)
       </header>
       <a href="https://quizlet.com/159758556/quiz-questions-intro-to-peace-studies-flash-cards/" rel="noreferrer">
       Questions by madison_piotrowski
