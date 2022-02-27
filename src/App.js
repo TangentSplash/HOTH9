@@ -5,15 +5,21 @@ import Questions from './QandA.json';
 
 
 function App() {
-  alert(Questions.NoQs)
+  //alert(Questions.NoQs)
   return (
     
+    
     <div className="App">
-      <h1>Anti-War</h1>
+      <h1>Anti-war Knowledge Contest</h1>
         <label>
             Username: 
             <input type="text" name="name" />
         </label>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="ucla_ukraine_solidarity.mp4" type="video/mp4"/>
+        </video>
+
       <header className="Quiz">
         Questions.
         <Question questNo={1} />
